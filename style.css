@@ -1,0 +1,42 @@
+header{
+    background-color: whitesmoke;
+}
+
+.link-explore,
+.link-about{
+    text-decoration: none;
+    color: gray;
+}
+
+body{
+    font-family: 'Nothing You Could Do', cursive;
+    color: gray;
+}
+
+nav{
+    margin: 30px;
+    float: right;
+}
+
+li{
+    display: inline;
+    font-size: 30px;
+    padding: 30px;
+}
+
+li:hover{
+    color: wheat;
+}
+
+
+
+
+h1{
+    font-size: 180%;
+    margin: 30px 60px;
+    display: inline-block;
+}
+
+
+
+
