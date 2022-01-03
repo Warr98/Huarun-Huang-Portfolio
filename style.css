@@ -1,42 +1,125 @@
-header{
-    background-color: whitesmoke;
-}
-
-.link-explore,
-.link-about{
-    text-decoration: none;
-    color: gray;
+*{
+    box-sizing: border-box;
 }
 
 body{
-    font-family: 'Nothing You Could Do', cursive;
-    color: gray;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    background: rgb(43, 41, 41);
+    word-spacing: 5px;
 }
-
-nav{
-    margin: 30px;
-    float: right;
-}
-
-li{
-    display: inline;
-    font-size: 30px;
-    padding: 30px;
-}
-
-li:hover{
-    color: wheat;
-}
-
-
 
 
 h1{
-    font-size: 180%;
-    margin: 30px 60px;
-    display: inline-block;
+    font-size: 300%;
+}
+
+h2{
+    font-size: 250%; 
+    text-align: left;
+    padding: 100px 0px 50px 0px;
+    color: silver;
+}
+
+p{
+    font-size: 150%;
+    line-height: 2;
+}
+
+header{
+    text-align: center;
+    
+}
+
+.logo{
+    width: 170px;
+    height: auto;
+    float: left;
+}
+
+.info{
+    padding-top: 40px;
+    padding-bottom: 35px;
+    padding-right: 165px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background: rgb(77, 189, 189);
 }
 
 
+nav a {
+    border: 5px solid rgb(77, 189, 189);
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
 
+.background{
+    width: 100%;
+    height: auto;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+}
+
+.refactoring{
+    width: 571px;
+    height: 550px;
+}
+
+.coming{
+    width: 471px;
+    height: 450px;
+}
+
+footer{
+    padding: 20px;
+    background-color: rgb(77, 189, 189);
+    font-size: 60%;
+    padding-left: 100px;
+}
+
+
+nav a:hover{
+    border-bottom: solid 4px #fff;
+}
+
+.refactoring:hover,
+.coming:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 1px;
+        flex-direction: column;
+    }
+    .logo{
+        float: none;
+    }
+    .info{
+        padding: 20px;
+        padding-top: 0px;
+    }
+    .refactoring{
+        width: 240px;
+        height: 240px;
+        flex-direction: column;
+    }
+    .coming{
+        width: 140px;
+        height: 140px;
+        flex-direction: column;
+    }
+    
+}
 
