@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/* Style font and backgrond entirely*/
 body{
     font-family: 'Lato', sans-serif;
     font-weight: bold;
@@ -9,7 +10,6 @@ body{
     background: rgb(43, 41, 41);
     word-spacing: 5px;
 }
-
 
 h1{
     font-size: 300%;
@@ -44,6 +44,7 @@ header{
     padding-right: 165px;
 }
 
+/* Display navigation as flexbox */
 nav{
     display: flex;
     justify-content: center;
@@ -64,6 +65,7 @@ nav a {
     height: auto;
 }
 
+/* Display main section as flexbox and stack items vertically */
 main{
     display: flex;
     flex-direction: column;
@@ -87,17 +89,19 @@ footer{
     padding-left: 100px;
 }
 
-
+/* Style navigation with hover pseudo selector*/
 nav a:hover{
     border-bottom: solid 4px #fff;
 }
 
+/* Enlarge images when mouse hovering */
 .refactoring:hover,
 .coming:hover{
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Create responsive layout for smaller screens */
 @media screen and (max-width: 768px) {
     nav {
         padding: 1px;
