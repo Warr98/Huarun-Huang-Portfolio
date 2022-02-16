@@ -78,9 +78,14 @@ main{
     padding: 60px;
 }
 
-.refactoring{
+.weatherDashboard{
     width: 571px;
     height: 550px;
+}
+
+.recipe{
+    width: 500px;
+    height: 500px;
 }
 
 .coming{
@@ -101,10 +106,15 @@ nav a:hover{
 }
 
 /* Enlarge images when mouse hovering */
-.refactoring:hover,
+.weatherDashboard:hover,
+.recipe:hover,
 .coming:hover{
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#resume{
+    text-decoration: none;
 }
 
 /* Create responsive layout for smaller screens */
@@ -120,7 +130,7 @@ nav a:hover{
         padding: 20px;
         padding-top: 0px;
     }
-    .refactoring{
+    .weatherDashboard{
         width: 240px;
         height: 240px;
         flex-direction: column;
